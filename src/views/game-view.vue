@@ -106,6 +106,9 @@ export default {
         startGame() {
             this.running = true
             this.gameover = false
+            this.chars = []
+            this.point = 0
+            this.miss = 0
         },
         generateChar() {
             // 生成一个随机字符
@@ -260,6 +263,8 @@ export default {
       
     .char
       font-size: var(--char-size)
-      
+      position: absolute
+      top: 50px
+      left: 25px
 
   </style>
