@@ -78,13 +78,8 @@ export default {
 
     methods: {
         createAudio() {
-            const audio = document.createElement('audio');
-            audio.src = '/6509e4d527ac4a3e9deb4c5e50258e6d.mp3';
-            document.body.appendChild(audio);
+            const audio = new Audio('/6509e4d527ac4a3e9deb4c5e50258e6d.mp3');
             audio.play();
-            audio.addEventListener('ended', () => {
-                document.body.removeChild(audio);
-            });
         },
         createImage(left) {
             const image = document.createElement('img');
